@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Student Name">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>prototype</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <article>
+            <h2>Get in Touch</h2>
+            <p>Have questions? Reach out to us using the information below or fill out the form.</p>
+            
+            <div class="contact-info">
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p>hello@example.com</p>
+                </div>
+                <div class="info-item">
+                    <h3>Phone</h3>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="info-item">
+                    <h3>Address</h3>
+                    <p>123 Web Dev Lane, Internet City</p>
+                </div>
+            </div>
+
+            <form action="/submit-contact" method="POST">
+                <fieldset>
+                    <legend>Send a Message</legend>
+                    <label for="cname">Name:</label>
+                    <input type="text" id="cname" name="user_name" required>
+                    
+                    <label for="cemail">Email Address:</label>
+                    <input type="email" id="cemail" name="user_email" required>
+                    
+                    <button type="submit">Send Message</button>
+                </fieldset>
+            </form>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; Copyright 2023</p>
+    </footer>
+</body>
+</html>
