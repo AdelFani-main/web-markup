@@ -1,0 +1,371 @@
+
+.kit-hero {
+  padding-top: 44px;
+  padding-bottom: 30px;
+}
+.headline h2,
+.item-checklist-header h2 {
+  font-size: 3.2rem;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+  color: #111111;
+}
+.headline p,
+.item-checklist-header p {
+  font-size: 1rem;
+  color: #5a5a5a;
+  line-height: 1.55;
+}
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-start;
+}
+.hero-tags {
+  margin-top: 4px;
+}
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 26px;
+  padding: 4px 10px;
+  border-radius: 5px;
+  border: 1px solid #e5e0d8;
+  background: #efefed;
+  color: #5a5a5a;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+.headline,
+.item-checklist-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+.headline h2,
+.item-checklist-header h2 {
+  font-size: 2.7rem;
+  margin-bottom: 12px;
+}
+.shop-grid {
+  display: grid;
+  gap: 22px;
+}
+.shop-grid {
+  grid-template-columns: 1fr 1fr;
+}
+.repair-shop {
+  background: #fff;
+  border: 1px solid #e5e0d8;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 0 #111111;
+}
+.shop-card-content {
+  padding: 18px 18px 16px;
+}
+.shop-card-content h3 {
+  font-size: 1rem;
+  line-height: 1.3;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+.shop-card-content p {
+  color: #5a5a5a;
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+.faq-row {
+  border: 1px solid #e5e0d8;
+  background: #fff;
+  border-radius: 12px;
+}
+.item-checklist-header {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.form-hint {
+  color: #7a7a7a;
+  font-size: 0.7rem;
+}
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+.faq-row {
+  display: grid;
+  grid-template-columns: 42px 1fr 240px;
+  gap: 18px;
+  align-items: center;
+  padding: 14px 18px;
+}
+.faq-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #efefed;
+  border: 1px solid #e5e0d8;
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+}
+.faq-info h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.faq-info p,
+.faq-answer p {
+  color: #5a5a5a;
+  font-size: 0.82rem;
+}
+.faq-answer {
+  display: inline-block;
+  margin-top: 4px;
+}
+.faq-answer {
+  text-align: right;
+}
+@media (max-width: 900px){
+.shop-grid {
+    grid-template-columns: 1fr;
+  }
+.faq-row {
+    grid-template-columns: 42px 1fr;
+  }
+.faq-answer { grid-column: 2; text-align: left; }
+}
+@media (max-width: 560px){
+.btn {
+    width: 100%;
+  }
+}
+.contact-page .topbar section,
+.contact-page main section {
+  padding: 0;
+}
+.contact-page main .site-shell,
+.contact-page main .page-shell {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+.contact-page main {
+  padding-bottom: 0;
+}
+.contact-page .headline h2,
+.contact-page .item-checklist-header h2 {
+  margin-bottom: 10px;
+  font-size: 1.9rem;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+.contact-page .headline p,
+.contact-page .item-checklist-header p {
+  font-size: 0.82rem;
+}
+.contact-page .contact-hero {
+  padding: 92px 0 44px;
+  border-bottom: 1px solid #eeece7;
+}
+.contact-page .contact-hero .site-shell {
+  text-align: center;
+}
+.contact-page .contact-hero .headline {
+  margin-bottom: 18px;
+}
+.contact-page .contact-hero .headline h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+.contact-page .contact-hero .headline p {
+  font-size: 0.82rem;
+}
+.contact-page .contact-hero .hero-buttons,
+.contact-page .contact-hero .hero-tags {
+  justify-content: center;
+}
+.contact-page .contact-hero .hero-buttons {
+  margin-bottom: 14px;
+}
+.contact-page .contact-hero ~ section {
+  padding: 76px 0;
+  border-bottom: 1px solid #eeece7;
+}
+.contact-page .contact-hero ~ section > .site-shell,
+.contact-page .checklist-shell {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.contact-page .contact-hero ~ section > .contact-overview {
+  display: block;
+}
+.contact-page .contact-overview .headline {
+  margin-bottom: 32px;
+  text-align: center;
+}
+.contact-page .contact-overview .shop-grid {
+  max-width: 880px;
+  margin: 0 auto;
+}
+.contact-page .shop-grid {
+  gap: 20px;
+}
+.contact-page .repair-shop {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 104px;
+  padding: 12px;
+  border-radius: 5px;
+  box-shadow: none;
+}
+.contact-page .contact-info-icon {
+  flex: 0 0 62px;
+  width: 62px;
+  height: 62px;
+  margin: 0;
+  background: transparent;
+}
+.contact-page .contact-info-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.contact-page .shop-card-content {
+  padding: 0;
+}
+.contact-page .shop-card-content h3 {
+  margin-bottom: 5px;
+  font-size: 0.88rem;
+}
+.contact-page .shop-card-content p {
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+.contact-page .contact-request {
+  align-items: center;
+}
+.contact-page .contact-request .item-checklist-header {
+  margin: 0;
+  text-align: left;
+}
+.contact-page .contact-request form {
+  width: 100%;
+}
+.contact-page .contact-form-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+.contact-page .contact-form-panel legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.contact-page .contact-form-panel label {
+  margin-top: 9px;
+  font-size: 0.72rem;
+}
+.contact-page .contact-form-panel .form-input {
+  min-height: 34px;
+  padding: 7px 10px;
+  font-size: 0.72rem;
+}
+.contact-page .contact-form-panel .form-hint {
+  font-size: 0.62rem;
+}
+.contact-page .contact-form-panel input[type="submit"] {
+  align-self: flex-start;
+  min-width: 150px;
+  margin-top: 10px;
+}
+.contact-page .contact-faq {
+  align-items: center;
+}
+.contact-page .contact-faq .item-checklist-header {
+  text-align: left;
+}
+.contact-page .faq-list {
+  gap: 0;
+  margin: 0;
+}
+.contact-page .faq-row {
+  grid-template-columns: 42px 1fr 150px;
+  gap: 12px;
+  padding: 14px 0;
+  border: 0;
+  border-bottom: 1px solid #eeece7;
+  border-radius: 0;
+  background: transparent;
+}
+.contact-page .faq-icon {
+  width: 36px;
+  height: 36px;
+  font-size: 1rem;
+}
+.contact-page .faq-info h3 {
+  margin-bottom: 3px;
+  font-size: 0.78rem;
+}
+.contact-page .faq-info p,
+.contact-page .faq-answer p {
+  font-size: 0.67rem;
+  line-height: 1.4;
+}
+.contact-page .faq-answer {
+  margin: 0;
+}
+.contact-page .site-footer {
+  background: transparent;
+}
+@media (max-width: 900px){.contact-page .contact-hero ~ section > .site-shell,
+.contact-page .checklist-shell {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+.contact-page .contact-hero ~ section {
+    padding: 52px 0;
+  }
+.contact-page .contact-request .item-checklist-header,
+.contact-page .contact-faq .item-checklist-header {
+    text-align: center;
+  }
+}
+@media (max-width: 560px){.contact-page .contact-hero {
+    padding: 58px 0 36px;
+  }
+.contact-page .shop-grid {
+    grid-template-columns: 1fr;
+  }
+.contact-page .faq-row {
+    grid-template-columns: 38px 1fr;
+  }
+.contact-page .faq-answer {
+    grid-column: 2;
+    text-align: left;
+  }
+}

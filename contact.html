@@ -8,15 +8,16 @@
     <meta name="keywords" content="bike repair, flat tire, bike shop, repair guide, maintenance, cycling tips">
     <meta name="author" content="Bike Repair Guide">
     <title>Contact the Bike Repair Guide</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/contact.css">
     <link rel="icon" type="image/svg+xml" href="/img/icon-favicon.png">
 </head>
-<body>
+<body class="contact-page">
 
     <header class="topbar">
         <section class="site-shell brand-row">
             <section class="logo">
-                <a href="/"><figure class="photo-figure"><img src="/img/logo-icon.png" alt="Bike Repair Guide Logo" class="logo-icon" title="Bike Repair Guide Logo"><figcaption>Bike repair basics for everyday riders.</figcaption></figure></a>
+                <a href="/"><img src="/img/logo-icon.png" alt="Bike Repair Guide Logo" class="logo-icon" title="Bike Repair Guide Logo"></a>
                 <span>Bike Repair Guide</span>
             </section>
             <nav class="top-nav" aria-label="Main Navigation">
@@ -32,15 +33,16 @@
         </section>
     </header>
 
-    <main>    <section class="kit-hero">
+    <main>
+    <section class="kit-hero contact-hero">
         <section class="site-shell">
             <header class="headline">
                 <h1>Contact us</h1>
-                <p>Tell us what is going on and we will help you get back to riding.</p>
+                <p>Send us your question and we’ll help you get back to riding.</p>
             </header>
             <nav class="hero-buttons" aria-label="Contact options">
-                <a href="#request-form" class="btn">Send an email</a>
-                <a href="#request-form" class="btn btn-primary">Call the help desk</a>
+                <a href="#request-form" class="btn">Send Email</a>
+                <a href="#faq" class="btn btn-primary">Call Help Center</a>
             </nav>
             <nav class="hero-tags" aria-label="Contact categories">
                 <span class="tag">General</span><span class="tag">Repairs</span><span class="tag">Parts</span>
@@ -49,44 +51,42 @@
     </section>
 
     <section>
-        <section class="site-shell">
+        <section class="site-shell contact-overview">
             <header class="headline">
                 <h2>Contact and FAQ</h2>
-                <p>Helpful answers for common bike issues, plus a simple way to send a question.</p>
+                <p>Beginner-friendly support for foldable bike repairs.</p>
             </header>
             <section class="shop-grid">
                 <article class="repair-shop">
-                    <figure class="shop-card-img">
-                        <img src="/img/contact.png" alt="Contact Form" title="Contact Form">
-                        <figcaption>Contact form</figcaption>
+                    <figure class="contact-info-icon">
+                        <img src="/img/contact.png" alt="Contact form icon" title="Contact form">
                     </figure>
                     <section class="shop-card-content">
                         <h3>Contact form</h3>
-                        <p>Fields marked with * are required.</p>
+                        <p>Fields marked with <em>*</em> are required.</p>
                     </section>
                 </article>
                 <article class="repair-shop">
-                    <figure class="shop-card-img">
-                        <img src="/img/faq.png" alt="FAQ" title="FAQ">
-                        <figcaption>Common questions</figcaption>
+                    <figure class="contact-info-icon">
+                        <img src="/img/faq.png" alt="Frequently asked questions icon" title="Frequently asked questions">
                     </figure>
                     <section class="shop-card-content">
                         <h3>Frequently asked questions</h3>
-                        <p>Browse a few quick answers below, or send your own question if you need a more specific fix.</p>
+                        <p>Browse topics below or ask your own question. Quick answers for common repair topics.</p>
                     </section>
                 </article>
             </section>
         </section>
     </section>
 
-    <section>
-        <section class="page-shell checklist-shell">
+    <section class="contact-request-section">
+    <section class="page-shell checklist-shell contact-request">
             <header class="item-checklist-header">
                 <h2>Send a request</h2>
                 <p>The more detail you include, the faster it is to help you.</p>
             </header>
             <form class="sum-box data_page-shell_temp" id="request-form" action="#" method="post">
-                <fieldset class="form-panel">
+                <fieldset class="form-panel contact-form-panel">
                     <legend>Contact details</legend>
                     <label for="salutation"><strong>Salutation *</strong></label>
                     <select id="salutation" class="form-input" name="salutation"><option>Select</option><option>Mr.</option><option>Ms.</option><option>Other</option></select>
@@ -114,11 +114,11 @@
         </section>
     </section>
 
-    <section>
-        <section class="page-shell checklist-shell">
+    <section class="contact-faq-section" id="faq">
+        <section class="page-shell checklist-shell contact-faq">
             <header class="item-checklist-header">
                 <h2>FAQ</h2>
-                <p>Quick answers to a few common issues.</p>
+                <p>Tap a question to expand (wireframe behavior).</p>
             </header>
             <section class="faq-list">
                 <article class="faq-row">
@@ -143,7 +143,8 @@
                 </article>
             </section>
         </section>
-    </section></main>
+    </section>
+    </main>
 
     <footer class="site-footer">
         <section class="page-shell footer-inner">
@@ -216,9 +217,5 @@
         </section>
     <p class="copyright">&copy; 2026 Bike Repair Guide &reg; &trade; &amp; &quot;bike repair&quot; &pound; &euro;</p>
 </footer>
-    <aside class="cookie-banner" aria-label="Cookie notice">
-        <span>We use a few cookies to keep the site smooth and useful.</span>
-        <button type="button">Got it</button>
-    </aside>
 </body>
 </html>

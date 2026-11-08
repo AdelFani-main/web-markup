@@ -1,0 +1,296 @@
+/* Shared base, header and footer styles for every page. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    background: #f4f2ee;
+    color: #111111;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+body.contact-page,
+body.emergency-page,
+body.fix-page {
+    background: #fffefa;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #3b4a37;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.site-shell,
+.page-shell {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 28px;
+}
+
+main {
+    padding-bottom: 40px;
+}
+
+section {
+    padding: 42px 0;
+}
+
+.form-input {
+    width: 100%;
+    border: 1px solid #e5e0d8;
+    border-radius: 6px;
+    min-height: 40px;
+    padding: 9px 12px;
+    background: #fff;
+    color: #111111;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 38px;
+    padding: 10px 16px;
+    border: 1px solid #e5e0d8;
+    border-radius: 6px;
+    background: #fff;
+    color: #111111;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background: #f0f0f0;
+}
+
+.btn-primary {
+    background: #111;
+    border-color: #111;
+    color: white;
+}
+
+.btn-primary:visited {
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #222;
+}
+
+.topbar {
+    background: #fff;
+    border-bottom: 1px solid #e5e0d8;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.topbar .site-shell,
+.brand-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 62px;
+    gap: 30px;
+}
+
+.logo,
+.brand-lockup {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.logo img,
+.brand-lockup img,
+.logo-icon {
+    width: 34px;
+    height: 34px;
+    display: block;
+    border-radius: 50%;
+}
+
+.logo span,
+.brand-lockup span {
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    font-size: 0.82rem;
+    color: #5a5a5a;
+}
+
+.menu-links > li > a {
+    font-weight: 600;
+}
+
+.menu-links a {
+    transition: color 0.2s ease;
+}
+
+.menu-links a:hover {
+    color: #111111;
+}
+
+.search-panel {
+    display: flex;
+    align-items: center;
+}
+
+.mini-search,
+.guide-search {
+    width: 150px;
+    height: 36px;
+    padding: 0 12px;
+    border: 1px solid #e5e0d8;
+    border-radius: 6px;
+    background: #f7f7f7;
+    color: #111111;
+    font-size: 0.8rem;
+}
+
+.mini-search::placeholder,
+.guide-search::placeholder {
+    color: #6a6a6a;
+}
+
+.site-footer {
+    border-top: 1px solid #e5e0d8;
+    background: #fff;
+    padding: 34px 0 20px;
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+    gap: 32px;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-brand .logo,
+.footer-brand .brand-lockup {
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #e5e0d8;
+    background: #fff;
+    color: #111111;
+}
+
+.footer-col h5 {
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.footer-col li {
+    margin-bottom: 7px;
+    color: #5a5a5a;
+    font-size: 0.83rem;
+}
+
+.copyright {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #7a7a7a;
+}
+
+@media (max-width: 900px) {
+    .footer-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .topbar .site-shell,
+    .brand-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 14px 0;
+    }
+
+    .menu-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .site-shell,
+    .page-shell {
+        padding: 0 18px;
+    }
+}
+
+@media (max-width: 560px) {
+    .top-nav {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .menu-links {
+        gap: 10px;
+        font-size: 0.7rem;
+    }
+}

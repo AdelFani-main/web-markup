@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bike repair guides, emergency fixes, tool checklists, and local workshop recommendations for everyday riders.">
-    <meta name="keywords" content="bike repair, flat tire, bike shop, repair guide, maintenance, cycling tips">
+    <meta name="description" content="Find bicycle repair shops in Haarlem with a local map, neighbourhoods, opening hours, and details for nearby workshops.">
+    <meta name="keywords" content="Haarlem, bike repair, bicycle shops, opening hours, workshop">
     <meta name="author" content="Bike Repair Guide">
-    <title>Bike Repair Shops in Haarlem</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Haarlem Bike Repair – Map &amp; Shops</title>
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/shops.css">
     <link rel="icon" type="image/svg+xml" href="/img/icon-favicon.png">
 
 </head>
@@ -19,8 +20,8 @@
     <header class="topbar">
         <section class="site-shell brand-row">
             <section class="logo">
-                <a href="/"><figure class="photo-figure"><img src="/img/logo-icon.png" alt="Bike Repair Guide Logo" class="logo-icon" title="Bike Repair Guide Logo"><figcaption>Bike repair basics for everyday riders.</figcaption></figure></a>
-                <span>Bike repair shops in Haarlem</span>
+                <a href="/" aria-label="Bike Repair Guide home"><figure class="photo-figure"><img src="/img/logo-icon.png" alt="Bike Repair Guide Logo" class="logo-icon" title="Bike Repair Guide Logo"><figcaption class="visually-hidden">Bike Repair Guide logo</figcaption></figure></a>
+                <span>Haarlem Bike Repair – Map &amp; Shops</span>
             </section>
             <nav class="top-nav" aria-label="Main Navigation">
                 <ul class="menu-links">
@@ -31,7 +32,7 @@
                     <li><a href="/contact.html">Contact</a></li>
                 </ul>
                 <!-- a compact search box so people can jump around quickly -->
-                <form role="search"><input type="search" class="mini-search" placeholder="Search" aria-label="Search">
+                <form class="search-panel" role="search"><input type="search" class="mini-search" placeholder="Search" aria-label="Search">
                 </form>
             </nav>
         </section>
@@ -42,27 +43,26 @@
             <section class="site-shell">
                 <section class="headline">
                     <h1>Find a local bike repair shop in Haarlem</h1>
-                    <p>A simple directory of places to check for repairs, tune-ups, and quick fixes.</p>
+                    <p>A map with directions and opening hours.</p>
                 </section>
-                <section class="hero-tags">
-                    <span class="tag">Nearby</span><span class="tag">Open now</span><span class="tag">Wheels & brakes</span><span class="tag">Tune-ups</span>
-                </section>
-            </section>
-        </section>
-
-        <section>
-            <section class="site-shell">
-                <section>
-                    <img src="/img/map.png" alt="Map of Haarlem with bike repair shops" title="Map of Haarlem with bike repair shops">
+                <section class="hero-tags hero-tags1">
+                    <span class="tag">Nearby</span><span class="tag">Open now</span><span class="tag">Wheel &amp; Brake</span><span class="tag">Tune-ups</span>
                 </section>
             </section>
         </section>
 
-        <section>
+        <section class="shop-map-section">
+            <figure class="shop-map">
+                <img src="/img/map.png" alt="Map of Haarlem showing nearby bike repair shops and surrounding neighbourhoods" title="Map of Haarlem with bike repair shops">
+                <figcaption class="visually-hidden">Haarlem map showing local roads, neighbourhoods, and repair shop locations.</figcaption>
+            </figure>
+        </section>
+
+        <section class="shop-directory" id="shop-directory">
             <section class="site-shell">
                 <section class="headline">
-                    <h2>Bike shops in Haarlem</h2>
-                    <p>A few local options to check if you need a quick repair, a tune-up, or a second opinion.</p>
+                    <h2>Repair Shops in Haarlem</h2>
+                    <p>Five directory listings with neighbourhoods and opening hours. Confirm details before visiting.</p>
                 </section>
                 <section class="shops-list">
                     <section class="shop-row">
@@ -123,7 +123,6 @@
                 </section>
             </section>
         </section>
-        <aside class="quick-note"><strong>Quick note:</strong> <em>Start with the obvious checks before changing parts or buying anything new.</em></aside>
 </main>
 
     <!-- a light footer for the end of the page -->
@@ -206,10 +205,6 @@
         </section>
     <p class="copyright">&copy; 2026 Bike Repair Guide &reg; &trade; &amp; &quot;bike repair&quot; &pound; &euro;</p>
 </footer>
-    <aside class="cookie-banner" aria-label="Cookie notice">
-        <span>We use a few cookies to keep the site smooth and useful.</span>
-        <button type="button">Got it</button>
-    </aside>
 </body>
 
 </html>

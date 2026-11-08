@@ -10,19 +10,20 @@
     <meta name="author" content="Bike Repair Guide">
     <title>Emergency Bike Repair</title>
     <!-- page styles and the little brand mark -->
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/emergency.css">
     <link rel="icon" type="image/svg+xml" href="/img/icon-favicon.png">
 
 </head>
 
-<body>
+<body class="emergency-page">
 
     <!-- simple top bar that keeps the main routes easy to find -->
     <header class="topbar">
         <section class="site-shell brand-row">
             <section class="logo">
-                <a href="/"><figure class="photo-figure"><img src="/img/logo-icon.png" alt="Bike Repair Guide Logo" class="logo-icon" title="Bike Repair Guide Logo"><figcaption>Bike repair basics for everyday riders.</figcaption></figure></a>
-                <span>Emergency bike repair</span>
+                <a href="/"><img src="/img/logo-icon.png" alt="Bike Repair Guide Logo" class="logo-icon" title="Bike Repair Guide Logo"></a>
+                <span>Bikes Emergency Repairs</span>
             </section>
             <nav class="top-nav" aria-label="Main Navigation">
                 <ul class="menu-links">
@@ -40,39 +41,39 @@
     </header>
 
     <main>
-        <section class="guide-hero callout-box">
+        <section class="guide-hero callout-box emergency-hero">
             <section class="page-shell hero-wrap">
                 <section class="guide-hero-content">
-                    <h1>Need a quick fix on the road?</h1>
-                    <p>Pick the problem, follow the first steps, and get the bike safe enough to ride or call a local shop.</p>
+                    <h1>Emergency Bike Repair</h1>
+                    <p>Pick your issue. Get instant triage steps and call a local shop.</p>
                     <section class="hero-buttons">
-                        <a href="#" class="btn">Get help</a>
-                        <a href="#" class="btn btn-primary">Call now</a>
+                        <a href="#assistance" class="btn">Request Assistance</a>
+                        <a href="/shops.html" class="btn btn-primary">Call Now</a>
                     </section>
                     <section class="hero-tags">
                         <span class="tag">Chain</span><span class="tag">Tire</span><span class="tag">Brakes</span><span class="tag">Other</span>
                     </section>
                 </section>
                 <section class="guide-hero-image">
-                    <img src="/img/hero image.png" alt="Emergency bike repair illustration" title="Emergency bike repair illustration">
+                    <img src="/img/hero image.png" alt="Mechanic repairing a folding bicycle in a workshop" title="Emergency bike repair">
                 </section>
             </section>
         </section>
 
         <section>
             <section class="site-shell">
-                <section class="headline">
-                    <h2>Quick triage</h2>
-                    <p>First, figure out what happened. Then take the safest step for the situation.</p>
+                <section class="headline emergency-triage-heading">
+                    <h2>Quick Triage</h2>
+                    <p>Identify the issue and take the first steps toward a safe roadside repair.</p>
                 </section>
-                <section class="issue-grid">
+                <section class="issue-grid emergency-triage">
                     <article class="issue-card">
                         <section class="issue-card-body">
                             <img src="/img/Chain Slipped image.png" alt="Chain Slipped" title="Chain Slipped">
                             <section>
                                 <h3>Chain slipped</h3>
-                                <section class="mini-tag">Needs attention fast</section>
-                                <p>• Stop pedaling • Check derailleur alignment • Re-seat the chain before riding again.</p>
+                                <section class="mini-tag">High urgency</section>
+                                <p>Stop pedaling immediately. Check derailleur alignment before riding.</p>
                                 <section class="tag-row"><span class="tag">Urgent</span><span class="tag">Roadside</span></section>
                             </section>
                         </section>
@@ -83,8 +84,8 @@
 
                             <section>
                                 <h3>Flat tire</h3>
-                                <section class="mini-tag">Needs attention fast</section>
-                                <p>• Find the puncture • Remove the wheel carefully • Patch or replace the tube.</p>
+                                <section class="mini-tag">High urgency</section>
+                                <p>Find the puncture and remove the wheel safely.</p>
                                 <section class="tag-row"><span class="tag">Urgent</span><span class="tag">Roadside</span></section>
                             </section>
                         </section>
@@ -95,11 +96,11 @@
 
         <section>
             <section class="site-shell">
-                <section class="headline">
-                    <h2>Common issue cards</h2>
-                    <p>Follow the steps for your issue. If it still feels unsafe, it’s worth calling a local shop.</p>
+                <section class="headline emergency-repair-heading">
+                    <h2>Repair Cards</h2>
+                    <p>Follow the steps for your issue. If you cannot repair it safely, contact a local bike shop.</p>
                 </section>
-                <section class="issue-grid">
+                <section class="issue-grid emergency-repair-cards">
                     <article class="issue-card">
                         <section class="issue-card-img">
                             <img src="/img/Chain Slipped.png" alt="Chain Slipped Repair" title="Chain Slipped Repair"> 
@@ -112,7 +113,7 @@
                                 <li>Check the derailleur and look for anything jammed or misaligned.</li>
                                 <li>Put the chain back on the correct sprocket and make sure it sits snugly.</li>
                             </ol>
-                            <a href="#" class="btn btn-primary">Call a local repair shop</a>
+                            <a href="/shops.html" class="btn btn-primary">Call Local Repair Shop</a>
                         </section>
                     </article>
                     <article class="issue-card">
@@ -127,7 +128,7 @@
                                 <li>Take the wheel off and check the tube for the puncture.</li>
                                 <li>Patch or replace the tube, then inflate it to the right pressure.</li>
                             </ol>
-                            <a href="#" class="btn btn-primary">Call a local repair shop</a>
+                            <a href="/shops.html" class="btn btn-primary">Call Local Repair Shop</a>
                         </section>
                     </article>
                 </section>
@@ -135,42 +136,55 @@
         </section>
 
         <section>
-            <section class="site-shell">
+            <section class="site-shell emergency-assistance" id="assistance">
                 <section class="headline">
-                    <h2>Call a local repair shop</h2>
-                    <p>Choose the problem and your area so it’s easy to get the right help quickly.</p>
+                    <h2>Call Local Repair Shop</h2>
+                    <p>Select your location and choose the issue card to route the call prompt.</p>
                 </section>
-                <section class="summary-grid">
-                    <section class="sum-box">
-                        <section class="form-group">
-                            <label for="issue-type"><strong>Issue type</strong></label>
-                            <select id="issue-type" class="form-input">
-                                <option>Pick: chain slipped / flat tire</option>
-                            </select>
+                <form action="#" method="post">
+                    <fieldset class="contact-fieldset">
+                        <legend>Call a local repair shop</legend>
+                        <section class="summary-grid">
+                            <section class="sum-box">
+                                <section class="form-group">
+                                    <label for="issue-type"><strong>Issue type</strong></label>
+                                    <select id="issue-type" class="form-input" name="issue-type">
+                                        <option>Pick: chain slipped / flat tire</option>
+                                        <option>Chain slipped</option>
+                                        <option>Flat tire</option>
+                                        <option>Brake problem</option>
+                                    </select>
+                                </section>
+                                <section class="form-group">
+                                    <label for="pickup-area"><strong>Current area</strong></label>
+                                    <input type="text" id="pickup-area" class="form-input" name="pickup-area" placeholder="Your neighborhood or ZIP code">
+                                </section>
+                                <section class="form-group">
+                                    <label for="urgency"><strong>Urgency</strong></label>
+                                    <select id="urgency" class="form-input" name="urgency">
+                                        <option>Right now / within 30 minutes</option>
+                                        <option>Today</option>
+                                        <option>This week</option>
+                                    </select>
+                                </section>
+                                <section class="form-group">
+                                    <label for="contact-email"><strong>Email</strong></label>
+                                    <input type="email" id="contact-email" class="form-input" name="contact-email" placeholder="name@example.com">
+                                </section>
+                                <section class="form-group">
+                                    <label for="contact-method"><strong>Best contact method</strong></label>
+                                    <input type="text" id="contact-method" class="form-input" name="contact-method" placeholder="Phone call preferred">
+                                </section>
+                            </section>
                         </section>
-                        <section class="form-group">
-                            <label for="pickup-area"><strong>Current area</strong></label>
-                            <input type="text" id="pickup-area" class="form-input" placeholder="Your neighborhood or ZIP code">
+                        <section class="summary-buttons">
+                            <input type="submit" value="Send request" class="btn btn-primary">
+                            <a href="/shops.html" class="btn">Find a repair shop</a>
                         </section>
-                        <section class="form-group">
-                            <label for="urgency"><strong>Urgency</strong></label>
-                            <select id="urgency" class="form-input">
-                                <option>Right now / within 30 minutes</option>
-                            </select>
-                        </section>
-                        <section class="form-group">
-                            <label for="contact-method"><strong>Best contact method</strong></label>
-                            <input type="text" id="contact-method" class="form-input" placeholder="Phone call preferred">
-                        </section>
-                    </section>
-                </section>
-                <section class="summary-buttons">
-                    <a href="#" class="btn">Save for later</a>
-                    <a href="/shops.html" class="btn btn-primary">Find a repair shop</a>
-                </section>
+                    </fieldset>
+                </form>
             </section>
         </section>
-        <aside class="quick-note"><strong>Quick note:</strong> <em>Start with the obvious checks before changing parts or buying anything new.</em></aside>
 </main>
 
     <!-- a light footer for the end of the page -->
@@ -247,10 +261,6 @@
         </section>
     <p class="copyright">&copy; 2026 Bike Repair Guide &reg; &trade; &amp; &quot;bike repair&quot; &pound; &euro;</p>
 </footer>
-    <aside class="cookie-banner" aria-label="Cookie notice">
-        <span>We use a few cookies to keep the site smooth and useful.</span>
-        <button type="button">Got it</button>
-    </aside>
 </body>
 
 </html>

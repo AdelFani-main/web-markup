@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bike repair guides, emergency fixes, tool checklists, and local workshop recommendations for everyday riders.">
-    <meta name="keywords" content="bike repair, flat tire, bike shop, repair guide, maintenance, cycling tips">
+    <meta name="description" content="Build a practical bike repair kit with a simple checklist, workshop essentials, and a quick estimate for your next repair.">
+    <meta name="keywords" content="bike repair, repair kit, cycling tools, maintenance, cycling tips">
     <meta name="author" content="Bike Repair Guide">
     <title>Build Your Bike Repair Kit</title>
     <!-- page styles and the little brand mark -->
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="icon" type="image/svg+xml" href="/img/icon-favicon.png">
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/bike-repair-kit.css">
+    <link rel="icon" type="image/png" href="/img/icon-favicon.png">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
     <header class="topbar">
         <section class="site-shell brand-row">
             <section class="logo">
-                <a href="/"><figure class="photo-figure"><img src="/img/logo-icon.png" alt="Bike Repair Guide Logo" class="logo-icon" title="Bike Repair Guide Logo"><figcaption>Bike repair basics for everyday riders.</figcaption></figure></a>
+                <a href="/" aria-label="Bike Repair Guide home"><img src="/img/logo-icon.png" alt="Bike Repair Guide Logo" class="logo-icon" title="Bike Repair Guide Logo"></a>
                 <span>Bike Repair Toolkit</span>
             </section>
             <nav class="top-nav" aria-label="Main Navigation">
@@ -32,7 +33,7 @@
                     <li><a href="/contact.html">Contact</a></li>
                 </ul>
                 <!-- a compact search box so people can jump around quickly -->
-                <form role="search">
+                <form class="search-panel" role="search">
                     <input type="search" class="mini-search" placeholder="Search" aria-label="Search">
                 </form>
             </nav>
@@ -43,49 +44,51 @@
         <section class="kit-hero">
             <section class="site-shell">
                 <section class="headline">
-                    <h1>Build your repair kit</h1>
-                    <p>Pick the tools you actually need, then keep a simple checklist ready for the next fix.</p>
+                    <h1>Build Your Repair Kit</h1>
+                    <p>Select the essentials. We’ll generate a step-by-step checklist and an estimated total.</p>
                 </section>
                 <section class="hero-buttons">
-                    <a href="#" class="btn">See what’s included</a>
-                    <a href="#" class="btn btn-primary">Start checklist</a>
+                    <a href="#workshop-checklist" class="btn">View Included Tools</a>
+                    <a href="#item-checklist" class="btn btn-primary">Start Checklist</a>
                 </section>
             </section>
         </section>
 
-        <section class="workshop-checklist">
+        <section class="workshop-checklist" id="workshop-checklist">
             <section class="site-shell">
                 <section class="headline">
-                    <h2>Workshop checklist</h2>
-                    <p>Use this as a quick rundown of the basics you’ll want before you start tinkering.</p>
+                    <h2>Workshop Checklist</h2>
+                    <p>Use the checklist below to capture everything you need for today’s repair.</p>
                 </section>
                 <section class="shop-grid">
                     <article class="repair-shop">
-                        <section class="shop-card-img">
-                            <img src="/img/sevice-diagram.jpg" alt="Service Image / Diagram" title="Service Image / Diagram">
-                        </section>
+                        <figure class="shop-card-img">
+                            <img src="/img/sevice-diagram.jpg" alt="A service diagram showing a bicycle drivetrain" title="Service Image / Diagram">
+                            <figcaption class="visually-hidden">Service Image / Diagram</figcaption>
+                        </figure>
                         <section class="shop-card-content">
-                            <h3>Service diagram</h3>
+                            <h3>Service Image / Diagram</h3>
                             <section class="shop-card-subtitle">Reference</section>
-                            <p>A quick visual guide for the part you’re working on, like the drivetrain or the wheel area.</p>
+                            <p>Blueprint-style (e.g., bike drivetrain close-up).</p>
                             <section class="shop-card-tags">
-                                <span class="tag">Quick reference</span>
-                                <span class="tag">Visual guide</span>
+                                <span class="tag">Image</span>
+                                <span class="tag">Blueprint Grid</span>
                             </section>
                         </section>
                     </article>
 
                     <article class="repair-shop">
-                        <section class="shop-card-img">
-                            <img src="/img/tools-needs.png" alt="Parts & Steps Checklist" title="Parts & Steps Checklist">
-                        </section>
+                        <figure class="shop-card-img">
+                            <img src="/img/tools-needs.png" alt="Bike repair tools laid out for a checklist" title="Parts & Steps Checklist">
+                            <figcaption class="visually-hidden">Parts &amp; Steps Checklist</figcaption>
+                        </figure>
                         <section class="shop-card-content">
-                            <h3>Parts and steps</h3>
+                            <h3>Parts &amp; Steps Checklist</h3>
                             <section class="shop-card-subtitle">What you need</section>
-                            <p>Keep the essentials together so you’re not stopping halfway through to search for a tool.</p>
+                            <p>1–6 items shown as a vertical list with checkboxes.</p>
                             <section class="shop-card-tags">
-                                <span class="tag">Checklist</span>
-                                <span class="tag">Easy to follow</span>
+                                <span class="tag">Checkboxes</span>
+                                <span class="tag">Blueprint notes</span>
                             </section>
                         </section>
                     </article>
@@ -93,120 +96,161 @@
             </section>
         </section>
 
-        <section class="item-checklist hand-me-down">
+        <section class="item-checklist" id="item-checklist">
             <section class="page-shell checklist-shell">
                 <section class="item-checklist-header">
-                    <h2>Essential items</h2>
-                    <p>Tick off the things you already have. Anything left over is what you’ll want to add to your kit.</p>
+                    <h2>Item Checklist</h2>
+                    <p>Each line is selectable; checked items are assumed to be included in your kit.</p>
+                    <aside class="kit-note visually-hidden">
+                        <strong>Workshop note:</strong>
+                        <em>Start with the obvious checks before changing parts or buying anything new.</em>
+                    </aside>
                 </section>
                 <ul class="checklist-items">
                     <li class="checklist-item">
-                        <section class="checklist-checkbox">
-                            <input type="checkbox" id="item1" aria-label="Chain Cleaning & Degreaser">
-                        </section>
+                        <label class="checklist-checkbox" for="item1">
+                            <input type="checkbox" id="item1" name="kit-item" value="chain-cleaner" form="kit-form">
+                        </label>
                         <section class="checklist-info">
-                            <h3>Chain cleaner and degreaser</h3>
-                            <p>Brush away grime before checking the drivetrain</p>
+                            <h3>Chain Cleaning &amp; Degreaser</h3>
+                            <p>Remove grime before inspection</p>
                         </section>
                         <section class="checklist-action">
-                            <p><strong>Use it, wipe it down, and keep things tidy.</strong></p>
+                            <p><strong>Apply, scrub, wipe down.</strong></p>
                         </section>
                     </li>
                     <li class="checklist-item">
-                        <section class="checklist-checkbox">
-                            <input type="checkbox" id="item2" aria-label="Chain Lube">
-                        </section>
+                        <label class="checklist-checkbox" for="item2">
+                            <input type="checkbox" id="item2" name="kit-item" value="chain-lube" form="kit-form">
+                        </label>
                         <section class="checklist-info">
-                            <h3>Chain lube</h3>
-                            <p>Choose dry or wet depending on the weather</p>
+                            <h3>Chain Lube (Dry or Wet)</h3>
+                            <p>Choose based on conditions</p>
                         </section>
                         <section class="checklist-action">
-                            <p><strong>A light coat is enough—wipe off the excess.</strong></p>
+                            <p><strong>Thin coats, wipe excess.</strong></p>
                         </section>
                     </li>
                     <li class="checklist-item">
-                        <section class="checklist-checkbox">
-                            <input type="checkbox" id="item3" aria-label="Tire Repair Set">
-                        </section>
+                        <label class="checklist-checkbox" for="item3">
+                            <input type="checkbox" id="item3" name="kit-item" value="tire-repair-set" form="kit-form">
+                        </label>
                         <section class="checklist-info">
-                            <h3>Tire repair set</h3>
-                            <p>Patches, tube, and tire levers</p>
+                            <h3>Tire Repair Set</h3>
+                            <p>Patch kit + tire levers</p>
                         </section>
                         <section class="checklist-action">
-                            <p><strong>Patch it, test it, and re-seat the tire carefully.</strong></p>
+                            <p><strong>Inspect puncture, patch, re-seat.</strong></p>
                         </section>
                     </li>
                     <li class="checklist-item">
-                        <section class="checklist-checkbox">
-                            <input type="checkbox" id="item4" aria-label="Brake Adjustment Tools">
-                        </section>
+                        <label class="checklist-checkbox" for="item4">
+                            <input type="checkbox" id="item4" name="kit-item" value="brake-adjustment-tools" form="kit-form">
+                        </label>
                         <section class="checklist-info">
-                            <h3>Brake adjustment tools</h3>
-                            <p>Fine-tune alignment and tension</p>
+                            <h3>Brake Adjustment Tools</h3>
+                            <p>Dial alignment &amp; tension</p>
                         </section>
                         <section class="checklist-action">
-                            <p><strong>Center the caliper and test the brakes before riding.</strong></p>
+                            <p><strong>Center calipers; test stopping.</strong></p>
                         </section>
                     </li>
                     <li class="checklist-item">
-                        <section class="checklist-checkbox">
-                            <input type="checkbox" id="item5" aria-label="Allen Wrench Set">
-                        </section>
+                        <label class="checklist-checkbox" for="item5">
+                            <input type="checkbox" id="item5" name="kit-item" value="allen-wrench-set" form="kit-form">
+                        </label>
                         <section class="checklist-info">
-                            <h3>Allen key set</h3>
-                            <p>Useful for fasteners on the frame and components</p>
+                            <h3>Allen Wrench Set</h3>
+                            <p>Fasteners for common components</p>
                         </section>
                         <section class="checklist-action">
-                            <p><strong>Check the sizes before tightening anything down.</strong></p>
+                            <p><strong>Verify sizes before tightening.</strong></p>
                         </section>
                     </li>
                     <li class="checklist-item">
-                        <section class="checklist-checkbox">
-                            <input type="checkbox" id="item6" aria-label="Multi-Tool & Spares">
-                        </section>
+                        <label class="checklist-checkbox" for="item6">
+                            <input type="checkbox" id="item6" name="kit-item" value="multi-tool-and-spares" form="kit-form">
+                        </label>
                         <section class="checklist-info">
-                            <h3>Multi-tool and spares</h3>
-                            <p>Simple fixes when you’re out and about</p>
+                            <h3>Multi-Tool &amp; Spares</h3>
+                            <p>Quick fixes on the go</p>
                         </section>
                         <section class="checklist-action">
-                            <p><strong>Include a spare tube and a couple of zip ties.</strong></p>
+                            <p><strong>Include spare tube/zip ties.</strong></p>
                         </section>
                     </li>
                 </ul>
             </section>
         </section>
 
-        <section class="kit-summary">
+        <section class="kit-summary" id="kit-summary">
             <section class="site-shell">
                 <section class="headline">
-                    <h2>Kit summary</h2>
-                    <p>A quick total keeps you from overspending or forgetting the basics.</p>
+                    <h2>Kit Summary &amp; Checkout</h2>
+                    <p>A highlighted total box and a large call-to-action button at the bottom of the right panel.</p>
                 </section>
-                <section class="summary-grid">
-                    <section class="sum-box">
-                        <section class="form-group">
-                            <label for="total-price"><strong>Total price</strong></label>
-                            <input type="text" id="total-price" class="form-input" placeholder="—" readonly>
-                            <p class="form-hint">A simple summary of the subtotal and the final estimated kit total.</p>
+                <form class="kit-form" id="kit-form" action="#" method="get">
+                    <fieldset class="summary-fields">
+                        <legend class="visually-hidden">Kit estimate and collection</legend>
+                        <section class="summary-grid">
+                            <section class="sum-box form-group">
+                                <label for="total-price">Total Price</label>
+                                <input type="text" id="total-price" name="total-price" class="form-input" placeholder="—" readonly>
+                                <p class="form-hint">Blueprint-style summary box: subtotal + estimated kit total.</p>
+                            </section>
+                            <section class="sum-box form-group">
+                                <label for="delivery">Delivery / Workshop Pickup</label>
+                                <select id="delivery" name="delivery" class="form-input">
+                                    <option value="">Select option</option>
+                                    <option value="delivery">Home delivery</option>
+                                    <option value="pickup">Workshop pickup</option>
+                                </select>
+                                <p class="form-hint">Optional selection row for estimated timing.</p>
+                            </section>
                         </section>
-                        <section class="form-group">
-                            <label for="delivery"><strong>Delivery or workshop pickup</strong></label>
-                            <select id="delivery" class="form-input">
-                                <option value="">Select an option</option>
-                                <option value="delivery">Home delivery</option>
-                                <option value="pickup">Workshop pickup</option>
-                            </select>
-                            <p class="form-hint">Optional timing details if you’re planning a visit.</p>
-                        </section>
+                    </fieldset>
+                    <section class="summary-buttons">
+                        <a href="#item-checklist" class="btn">Save Checklist</a>
+                        <input type="submit" name="action" value="Generate Repair Kit" class="btn btn-primary">
                     </section>
-                </section>
-                <section class="summary-buttons">
-                    <a href="#" class="btn">Save checklist</a>
-                    <a href="#" class="btn btn-primary">Generate my kit</a>
-                </section>
+                    <details class="kit-extras">
+                        <summary>More kit options</summary>
+                        <label for="kit-email">Email address</label>
+                        <input type="email" id="kit-email" name="kit-email" class="form-input" placeholder="name@example.com">
+                        <input type="submit" value="Send Checklist" class="btn btn-primary">
+                        <section class="kit-comparison">
+                            <h3>Compare kit basics</h3>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Why it matters</th>
+                                        <th>Best use</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Chain lube</td>
+                                        <td>Reduces squeaks and wear</td>
+                                        <td>Daily riding</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tire repair kit</td>
+                                        <td>Handles flats on the road</td>
+                                        <td>Any ride</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hex keys</td>
+                                        <td>Adjusts seats, bars, and mounts</td>
+                                        <td>Workshop use</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                    </details>
+                </form>
             </section>
         </section>
-        <aside class="quick-note"><strong>Quick note:</strong> <em>Start with the obvious checks before changing parts or buying anything new.</em></aside>
 </main>
 
     <!-- a light footer for the end of the page -->
@@ -284,10 +328,6 @@
     <p class="copyright">&copy; 2026 Bike Repair Guide &reg; &trade; &amp; &quot;bike repair&quot; &pound; &euro;</p>
 </footer>
 
-    <aside class="cookie-banner" aria-label="Cookie notice">
-        <span>We use a few cookies to keep the site smooth and useful.</span>
-        <button type="button">Got it</button>
-    </aside>
 </body>
 
 </html>

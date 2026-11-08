@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bike repair guides, emergency fixes, tool checklists, and local workshop recommendations for everyday riders.">
-    <meta name="keywords" content="bike repair, flat tire, bike shop, repair guide, maintenance, cycling tips">
+    <meta name="description" content="Beginner-friendly bike repair guides with clear steps for shifting, brake, and tire problems, plus practical safety checks.">
+    <meta name="keywords" content="bike repair, repair guides, cycling, bike maintenance, safety checks">
     <meta name="author" content="Bike Repair Guide">
-    <title>Beginner Repair Guide</title>
+    <title>Bike Repair for Beginners</title>
 
     <!-- page styles and the little brand mark -->
     <link rel="icon" type="image/svg+xml" href="/img/icon-favicon.png">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
 
 </head>
 
@@ -22,7 +23,7 @@
     <header class="topbar">
         <section class="site-shell brand-row">
             <section class="brand-lockup">
-                <a href="/"><figure class="photo-figure"><img src="/img/logo-icon.png" alt="Bike Repair Guide Logo" class="logo-icon" title="Bike Repair Guide Logo"><figcaption>Bike repair basics for everyday riders.</figcaption></figure></a>
+                <a href="/" aria-label="Bike Repair Guide home"><figure class="photo-figure"><img src="/img/logo-icon.png" alt="Bike Repair Guide Logo" class="logo-icon" title="Bike Repair Guide Logo"><figcaption class="visually-hidden">Bike Repair Guide logo</figcaption></figure></a>
                 <span>Beginner Repair Guide</span>
             </section>
 
@@ -46,91 +47,92 @@
         <section class="hero-band support-slab">
             <section class="page-shell hero-layout">
                 <section class="intro-copy">
-                    <h1>Bike repair for beginners</h1>
-                    <p>Simple fixes for the everyday problems that make a ride feel off. Clear steps, practical checks,
-                        and no confusing jargon.</p>
+                    <h1>Bike Repair for Beginners</h1>
+                    <p>Step-by-step fixes that match the way bikes are built—simple diagrams, clear order of operations, and quick checks.</p>
 
                     <section class="hero-buttons">
                         <a href="/emergency.html" class="btn">See common fixes</a>
                         <a href="/fix.html" class="btn btn-primary">Start a repair</a>
                     </section>
 
-                    <section class="hero-tags">
+                    <section class="hero-tags" aria-label="Key repair topics">
                         <span class="tag">Easy fixes</span>
                         <span class="tag">Bike care</span>
                         <span class="tag">Safety checks</span>
                     </section>
                 </section>
 
-                <section class="hero-photo">
+                <figure class="hero-photo">
                     <img src="/img/serwis.jpg" alt="bike service workshop" title="bike service workshop">
-                </section>
+                    <figcaption class="visually-hidden">A mechanic works on a bicycle in a repair workshop</figcaption>
+                </figure>
             </section>
         </section>
 
-        <section>
+        <section class="featured-fixes">
             <section class="site-shell">
                 <section class="section-intro">
-                    <h2>Popular fixes</h2>
-                    <p>Start with the problems that show up most often. These are the small issues that usually have a
-                        simple cause.</p>
+                    <h2>Featured Fixes</h2>
+                    <p>Start with the most common issues. Each card includes the first actions to try and what to double check next.</p>
                 </section>
 
                 <section class="fix-list">
                     <article class="issue-card">
-                        <section class="fix-visual">
+                        <figure class="fix-visual">
                             <span class="step-tag">Beginner step 1</span>
                             <img src="/img/shifting.png" alt="shifting gear repair" title="shifting gear repair">
-                        </section>
+                            <figcaption class="visually-hidden">Adjusting a bicycle rear derailleur</figcaption>
+                        </figure>
                         <section class="fix-copy">
-                            <h3>Shifting feels rough or unreliable</h3>
-                            <p>Check cable tension, indexing, and limit screws.</p>
+                            <h3>Shifting Won’t Improve</h3>
+                            <p>Indexing, cable tension, and limit screws</p>
                         </section>
                     </article>
 
                     <article class="issue-card">
-                        <section class="fix-visual">
+                        <figure class="fix-visual">
                             <span class="step-tag">Beginner step 2</span>
                             <img src="/img/pads.png" alt="brake pads" title="brake pads">
-                        </section>
+                            <figcaption class="visually-hidden">Inspecting a bicycle disc brake</figcaption>
+                        </figure>
                         <section class="fix-copy">
-                            <h3>Brakes squeal or rub</h3>
-                            <p>Clean the pads, align the caliper, and check rotor wear.</p>
+                            <h3>Bikes Squeal or Rub</h3>
+                            <p>Clean pads, align calipers, check rotor wear</p>
                         </section>
                     </article>
 
                     <article class="issue-card">
-                        <section class="fix-visual">
+                        <figure class="fix-visual">
                             <span class="step-tag">Beginner step 3</span>
                             <img src="/img/flat-tire.png" alt="flat tire fix" title="flat tire fix">
-                        </section>
+                            <figcaption class="visually-hidden">A bicycle tire with a puncture</figcaption>
+                        </figure>
                         <section class="fix-copy">
-                            <h3>Fix a flat tire</h3>
-                            <p>Remove the wheel carefully, replace the tube, and check the tyre for damage.</p>
+                            <h3>Fix a Flat Tire</h3>
+                            <p>Remove the wheel safely, replace the tube</p>
                         </section>
                     </article>
                 </section>
             </section>
         </section>
 
-        <section>
+        <section class="start-section">
             <section class="site-shell">
                 <section class="section-intro">
-                    <h2>Start here: safety and tools</h2>
-                    <p>A simple routine before you touch anything: set the bike up properly, gather the right tools, and
-                        check the obvious first.</p>
+                    <h2>Start Here: Safety + Tools</h2>
+                    <p>A simple order of operations so you don’t miss the fold points, cables, and fasteners.</p>
                 </section>
 
                 <section class="starter-grid">
                     <article class="care-card">
-                        <section class="starter-thumb">
+                        <figure class="starter-thumb">
                             <img src="/img/hinge.png" alt="hinge safety" title="hinge safety">
-                        </section>
+                            <figcaption class="visually-hidden">A bicycle secured for repair</figcaption>
+                        </figure>
                         <section class="starter-copy">
                             <h3>Safety first</h3>
                             <section class="mini-label">Quick checks</section>
-                            <p>Set the bike on a stable surface, lock it in place, and check the brakes and bolts before
-                                you ride again.</p>
+                            <p>Lift, stabilize, and inspect fold hinges. Confirm brakes and bolts feel firm before testing the ride.</p>
                             <section class="tag-row">
                                 <span class="tag">Before you start</span>
                                 <span class="tag">Secure setup</span>
@@ -139,14 +141,14 @@
                     </article>
 
                     <article class="care-card">
-                        <section class="starter-thumb">
+                        <figure class="starter-thumb">
                             <img src="/img/tools-needs.png" alt="tools needed" title="tools needed">
-                        </section>
+                            <figcaption class="visually-hidden">A basic set of bicycle repair tools</figcaption>
+                        </figure>
                         <section class="starter-copy">
                             <h3>Tools you actually need</h3>
                             <section class="mini-label">Basic kit</section>
-                            <p>Keep it simple: a basic hex set, tire levers, pump, and a clean cloth. Add only the tools
-                                your guide asks for.</p>
+                            <p>Keep it minimal: basic hex set, tire levers, pump, microfiber cloth. Add only what your guide requests.</p>
                             <section class="tag-row">
                                 <span class="tag">Minimal kit</span>
                                 <span class="tag">No guesswork</span>
@@ -155,14 +157,14 @@
                     </article>
 
                     <article class="care-card">
-                        <section class="starter-thumb">
+                        <figure class="starter-thumb">
                             <img src="/img/follow-diagram.png" alt="diagram instructions" title="diagram instructions">
-                        </section>
+                            <figcaption class="visually-hidden">A bicycle repair diagram on a workbench</figcaption>
+                        </figure>
                         <section class="starter-copy">
-                            <h3>How to read diagrams</h3>
-                            <section class="mini-label">Clear and practical</section>
-                            <p>Match the arrows to the part on your bike, then follow the numbered steps. If a guide says
-                                to verify, stop and check before moving on.</p>
+                            <h3>How to Follow Diagrams</h3>
+                            <section class="mini-label">Blueprint logic</section>
+                            <p>Match arrows to your bike’s parts, then follow the numbered steps. Stop when a guide says “verify.”</p>
                             <section class="tag-row">
                                 <span class="tag">Checkpoints</span>
                             </section>
@@ -170,14 +172,14 @@
                     </article>
 
                     <article class="care-card">
-                        <section class="starter-thumb">
+                        <figure class="starter-thumb">
                             <img src="/img/maintenace-schedule.png" alt="maintenance schedule" title="maintenance schedule">
-                        </section>
+                            <figcaption class="visually-hidden">A bicycle maintenance schedule</figcaption>
+                        </figure>
                         <section class="starter-copy">
-                            <h3>Maintenance schedule</h3>
-                            <section class="mini-label">Keep it regular</section>
-                            <p>Check cable tension and hinge alignment every few weeks. Give the brakes a quick once-over
-                                after long periods in storage.</p>
+                            <h3>Maintenance Schedule</h3>
+                            <section class="mini-label">Fast routine</section>
+                            <p>Check cable tension and hinge alignment monthly. Inspect brake feel after longer storage.</p>
                             <section class="tag-row">
                                 <span class="tag">Monthly</span>
                                 <span class="tag">After storage</span>
@@ -187,7 +189,6 @@
                 </section>
             </section>
         </section>
-        <aside class="quick-note"><strong>Quick note:</strong> <em>Start with the obvious checks before changing parts or buying anything new.</em></aside>
 </main>
 
     <!-- The footer keeps the site feeling complete without being too busy -->
@@ -271,10 +272,6 @@
     <p class="copyright">&copy; 2026 Bike Repair Guide &reg; &trade; &amp; &quot;bike repair&quot; &pound; &euro;</p>
 </footer>
 
-    <aside class="cookie-banner" aria-label="Cookie notice">
-        <span>We use a few cookies to keep the site smooth and useful.</span>
-        <button type="button">Got it</button>
-    </aside>
 </body>
 
 </html>
