@@ -1,10 +1,5 @@
-/* --- RESET & BASE --- */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+/* --- this reset the page styles --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     color: #111;
@@ -12,23 +7,11 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul {
-    list-style: none;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 32px;
-}
-
-/* --- HEADER --- */
+/* --- the header of the page --- */
 .site-header {
     border-bottom: 1px solid #e5e5e5;
     padding: 16px 0;
@@ -37,14 +20,12 @@ ul {
     background: #fff;
     z-index: 100;
 }
-
 .header-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 24px;
 }
-
 .logo {
     display: flex;
     align-items: center;
@@ -52,32 +33,24 @@ ul {
     font-size: 1.25rem;
     font-weight: 600;
 }
-
 .logo-icon {
     width: 40px;
     height: 40px;
 }
-
 .main-nav {
     display: flex;
     align-items: center;
     gap: 32px;
 }
-
 .nav-links {
     display: flex;
     gap: 28px;
 }
-
 .nav-links a {
     font-size: 0.95rem;
     color: #333;
 }
-
-.nav-links a:hover {
-    color: #000;
-}
-
+.nav-links a:hover { color: #000; }
 .search-box {
     padding: 8px 16px;
     border: 1px solid #d1d5db;
@@ -87,23 +60,16 @@ ul {
     outline: none;
     background: #f9fafb;
 }
+.search-box:focus { border-color: #111; }
 
-.search-box:focus {
-    border-color: #111;
-}
-
-/* --- HERO --- */
-.hero {
-    padding: 64px 0 48px;
-}
-
+/* --- this is the hero section --- */
+.hero { padding: 64px 0 48px; }
 .hero-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 48px;
     align-items: center;
 }
-
 .hero-content h1 {
     font-size: 2.75rem;
     font-weight: 700;
@@ -111,21 +77,19 @@ ul {
     margin-bottom: 16px;
     letter-spacing: -0.02em;
 }
-
 .hero-content p {
     font-size: 1.05rem;
     color: #555;
     margin-bottom: 28px;
     max-width: 480px;
 }
-
 .hero-buttons {
     display: flex;
     gap: 12px;
     margin-bottom: 20px;
+    margin-top: 12px;
     flex-wrap: wrap;
 }
-
 .btn {
     padding: 10px 20px;
     border-radius: 6px;
@@ -137,28 +101,20 @@ ul {
     border: 1px solid #d1d5db;
     background: #fff;
     color: #111;
+    text-align: center;
 }
-
-.btn:hover {
-    background: #f3f4f6;
-}
-
+.btn:hover { background: #f3f4f6; }
 .btn-primary {
     background: #111;
     color: #fff;
     border-color: #111;
 }
-
-.btn-primary:hover {
-    background: #333;
-}
-
+.btn-primary:hover { background: #333; }
 .hero-tags {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
 }
-
 .tag {
     padding: 6px 14px;
     background: #f3f4f6;
@@ -166,36 +122,31 @@ ul {
     font-size: 0.85rem;
     color: #374151;
 }
-
 .hero-image {
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
 }
-
 .hero-image img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* --- SECTIONS --- */
-section {
-    padding: 64px 0;
-}
-
+/* --- the remaining sections --- */
+section { padding: 64px 0; }
 .section-header {
     text-align: center;
     margin-bottom: 48px;
 }
-
+.section-header h1,
 .section-header h2 {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 12px;
     letter-spacing: -0.01em;
 }
-
+.section-header h1 { font-size: 2.5rem; }
 .section-header p {
     color: #555;
     max-width: 520px;
@@ -203,20 +154,18 @@ section {
     font-size: 0.95rem;
 }
 
-/* --- FEATURED FIXES CARDS --- */
+/* --- featured cards --- */
 .featured-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
-
 .featured-card {
     border: 1px solid #e5e7eb;
     border-radius: 8px;
     overflow: hidden;
     background: #fff;
 }
-
 .featured-card-img {
     position: relative;
     width: 100%;
@@ -224,47 +173,39 @@ section {
     background: #f3f4f6;
     overflow: hidden;
 }
-
 .featured-card-img img {
     width: 100%;
     height: 100%;
     display: block;
 }
-
 .step-label {
     position: absolute;
     top: 12px;
     left: 12px;
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(255,255,255,0.92);
     padding: 4px 10px;
     border-radius: 4px;
     font-size: 0.75rem;
     color: #374151;
     font-weight: 500;
 }
-
-.featured-card-body {
-    padding: 16px;
-}
-
+.featured-card-body { padding: 16px; }
 .featured-card-body h3 {
     font-size: 0.95rem;
     font-weight: 600;
     margin-bottom: 4px;
 }
-
 .featured-card-body p {
     font-size: 0.9rem;
     color: #555;
 }
 
-/* --- SAFETY + TOOLS CARDS --- */
+/* --- safety and tools cards --- */
 .safety-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
-
 .safety-card {
     border: 1px solid #e5e7eb;
     border-radius: 8px;
@@ -273,7 +214,6 @@ section {
     gap: 20px;
     background: #fff;
 }
-
 .safety-card-img {
     width: 140px;
     min-width: 140px;
@@ -282,76 +222,62 @@ section {
     overflow: hidden;
     background: #f3f4f6;
 }
-
 .safety-card-img img {
     width: 100%;
     height: 100%;
     display: block;
 }
-
 .safety-card-content {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
-
 .safety-card-content h3 {
     font-size: 1.05rem;
     font-weight: 600;
     margin-bottom: 4px;
 }
-
 .safety-card-subtitle {
     font-size: 0.85rem;
     color: #9ca3af;
     margin-bottom: 8px;
 }
-
 .safety-card-content p {
     font-size: 0.9rem;
     color: #4b5563;
     margin-bottom: 12px;
     flex: 1;
 }
-
 .safety-card-tags {
     display: flex;
     gap: 6px;
     flex-wrap: wrap;
 }
-
 .safety-card-tags .tag {
     font-size: 0.78rem;
     padding: 4px 10px;
 }
 
-/* --- FOOTER --- */
+/* --- the site footer --- */
 .site-footer {
     border-top: 1px solid #e5e5e5;
     padding: 48px 0 32px;
 }
-
 .footer-inner {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
     gap: 48px;
 }
-
 .footer-brand {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
-
-.footer-brand .logo {
-    margin-bottom: 8px;
-}
-
+.footer-brand .logo { margin-bottom: 8px; }
 .social-links {
     display: flex;
     gap: 12px;
 }
-
 .social-links a {
     width: 24px;
     height: 24px;
@@ -360,40 +286,32 @@ section {
     justify-content: center;
     color: #555;
 }
-
-.social-links a:hover {
-    color: #111;
-}
-
+.social-links a:hover { color: #111; }
 .footer-col h5 {
     font-size: 0.95rem;
     font-weight: 600;
     margin-bottom: 16px;
 }
-
-.footer-col ul li {
-    margin-bottom: 10px;
-}
-
+.footer-col ul li { margin-bottom: 10px; }
 .footer-col a {
     font-size: 0.9rem;
     color: #555;
 }
+.footer-col a:hover { color: #111; }
 
-.footer-col a:hover {
-    color: #111;
+/* --- responsive styles --- */
+@media (max-width: 900px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .featured-grid { grid-template-columns: 1fr; }
+    .safety-grid { grid-template-columns: 1fr; }
+    .footer-inner { grid-template-columns: 1fr 1fr; }
+    .nav-links { display: none; }
 }
 
-/* --- KIT HERO --- */
-.kit-hero {
-    padding: 64px 0 48px;
-    text-align: center;
-}
 
-/* --- WORKSHOP CHECKLIST --- */
-.workshop-checklist {
-    border-top: 1px solid #e5e5e5;
-}
+/* the repair kit page */
+.kit-hero { padding: 64px 0 48px; text-align: center; }
+.workshop-checklist { border-top: 1px solid #e5e5e5; }
 .workshop-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -451,10 +369,7 @@ section {
     padding: 4px 10px;
 }
 
-/* --- ITEM CHECKLIST --- */
-.item-checklist {
-    border-top: 1px solid #e5e5e5;
-}
+.item-checklist { border-top: 1px solid #e5e5e5; }
 .item-checklist-inner {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
@@ -471,10 +386,7 @@ section {
     color: #555;
     font-size: 0.95rem;
 }
-.checklist-items {
-    display: flex;
-    flex-direction: column;
-}
+.checklist-items { display: flex; flex-direction: column; }
 .checklist-item {
     display: grid;
     grid-template-columns: 40px 1fr 1fr;
@@ -483,9 +395,7 @@ section {
     padding: 20px 0;
     border-bottom: 1px solid #e5e7eb;
 }
-.checklist-item:first-child {
-    border-top: 1px solid #e5e7eb;
-}
+.checklist-item:first-child { border-top: 1px solid #e5e7eb; }
 .checklist-checkbox {
     display: flex;
     align-items: center;
@@ -508,22 +418,14 @@ section {
     font-size: 0.85rem;
     color: #9ca3af;
 }
-.checklist-action {
-    text-align: right;
-}
+.checklist-action { text-align: right; }
 .checklist-action p {
     font-size: 0.95rem;
     color: #111;
 }
 
-/* --- KIT SUMMARY --- */
-.kit-summary {
-    border-top: 1px solid #e5e5e5;
-}
-.summary-grid {
-    max-width: 800px;
-    margin: 0 auto 32px;
-}
+.kit-summary { border-top: 1px solid #e5e5e5; }
+.summary-grid { max-width: 800px; margin: 0 auto 32px; }
 .summary-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -548,9 +450,7 @@ section {
     outline: none;
     width: 100%;
 }
-.form-input:focus {
-    border-color: #111;
-}
+.form-input:focus { border-color: #111; }
 .form-input[readonly] {
     background: #f9fafb;
     color: #9ca3af;
@@ -570,10 +470,17 @@ section {
     padding: 12px 24px;
 }
 
-/* --- GUIDE HERO --- */
-.guide-hero {
-    padding: 64px 0 48px;
+@media (max-width: 900px) {
+    .workshop-grid { grid-template-columns: 1fr; }
+    .item-checklist-inner { grid-template-columns: 1fr; }
+    .checklist-item { grid-template-columns: 40px 1fr; }
+    .checklist-action { grid-column: 2; text-align: left; }
+    .summary-form { grid-template-columns: 1fr; }
 }
+
+
+/* the repair page */
+.guide-hero { padding: 64px 0 48px; }
 .guide-hero-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -603,7 +510,6 @@ section {
     display: block;
 }
 
-/* --- WARNING / SAFETY SECTION --- */
 .warning-section {
     padding: 64px 0;
     background: #f9fafb;
@@ -641,10 +547,7 @@ section {
     display: block;
 }
 
-/* --- 5-STEP TIMELINE --- */
-.timeline-section {
-    padding: 64px 0;
-}
+.timeline-section { padding: 64px 0; }
 .timeline-inner {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
@@ -675,9 +578,7 @@ section {
     background: #fff;
     transition: box-shadow 0.2s;
 }
-.timeline-step:hover {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
+.timeline-step:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
 .timeline-step-img {
     width: 120px;
     min-width: 120px;
@@ -691,9 +592,7 @@ section {
     height: 100%;
     display: block;
 }
-.timeline-step-content {
-    flex: 1;
-}
+.timeline-step-content { flex: 1; }
 .timeline-step-content h3 {
     font-size: 1rem;
     font-weight: 600;
@@ -710,7 +609,6 @@ section {
     line-height: 1.5;
 }
 
-/* --- STEP IMAGES --- */
 .step-images-section {
     padding: 64px 0;
     border-top: 1px solid #e5e5e5;
@@ -731,29 +629,24 @@ section {
     color: #555;
     font-size: 0.95rem;
 }
-.step-images-list {
-    display: flex;
-    flex-direction: column;
-}
+.step-images-list { display: flex; flex-direction: column; }
 .step-image-row {
     display: grid;
-    grid-template-columns: 40px 1fr 1fr;
+    grid-template-columns: 160px 1fr 1fr;
     gap: 16px;
     align-items: center;
     padding: 20px 0;
     border-bottom: 1px solid #e5e7eb;
 }
-.step-image-row:first-child {
-    border-top: 1px solid #e5e7eb;
-}
+.step-image-row:first-child { border-top: 1px solid #e5e7eb; }
 .step-image-icon {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .step-image-icon img {
-    width: 40px;
-    height: 40px;
+    width: 160px;
+    height: 160px;
 }
 .step-image-info h3 {
     font-size: 1rem;
@@ -764,47 +657,12 @@ section {
     font-size: 0.85rem;
     color: #9ca3af;
 }
-.step-image-label {
-    text-align: right;
-}
+.step-image-label { text-align: right; }
 .step-image-label p {
     font-size: 0.95rem;
     color: #111;
 }
 
-
-/* --- RESPONSIVE --- */
-@media (max-width: 900px) {
-    .hero-inner {
-        grid-template-columns: 1fr;
-    }
-
-    .featured-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .safety-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-inner {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .nav-links {
-        display: none;
-    }
-}
-
-@media (max-width: 900px) {
-    .workshop-grid { grid-template-columns: 1fr; }
-    .item-checklist-inner { grid-template-columns: 1fr; }
-    .checklist-item { grid-template-columns: 40px 1fr; }
-    .checklist-action { grid-column: 2; text-align: left; }
-    .summary-form { grid-template-columns: 1fr; }
-}
-
-/* --- FOLDING HINGE RESPONSIVE --- */
 @media (max-width: 900px) {
     .guide-hero-inner { grid-template-columns: 1fr; }
     .warning-inner { grid-template-columns: 1fr; }
@@ -812,4 +670,103 @@ section {
     .step-images-inner { grid-template-columns: 1fr; }
     .step-image-row { grid-template-columns: 40px 1fr; }
     .step-image-label { grid-column: 2; text-align: left; }
+}
+
+
+
+/* Shops List */
+.shops-list {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.shop-row {
+    display: grid;
+    grid-template-columns: 40px 1fr 1fr;
+    gap: 16px;
+    align-items: center;
+    padding: 20px 24px;
+    border-bottom: 1px solid #e5e7eb;
+    background: #fff;
+}
+.shop-row:last-child { border-bottom: none; }
+.shop-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #f3f4f6;
+    border-radius: 50%;
+}
+.shop-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.shop-info p {
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+.shop-hours p {
+    font-size: 0.9rem;
+    color: #111;
+    text-align: right;
+}
+.shop-hours .safety-card-subtitle {
+    text-align: right;
+}
+
+/* FAQ List */
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.faq-row {
+    display: grid;
+    grid-template-columns: 40px 1fr 1fr;
+    gap: 16px;
+    align-items: center;
+    padding: 20px 24px;
+    border-bottom: 1px solid #e5e7eb;
+    background: #fff;
+}
+.faq-row:last-child { border-bottom: none; }
+.faq-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #f3f4f6;
+    border-radius: 50%;
+}
+.faq-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.faq-info p {
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+.faq-answer { text-align: right; }
+.faq-answer p {
+    font-size: 0.95rem;
+    color: #111;
+}
+
+@media (max-width: 900px) {
+    .shop-row { grid-template-columns: 40px 1fr; }
+    .shop-hours { grid-column: 2; text-align: left; }
+    .shop-hours p { text-align: left; }
+    .shop-hours .safety-card-subtitle { text-align: left; }
+    
+    .faq-row { grid-template-columns: 40px 1fr; }
+    .faq-answer { grid-column: 2; text-align: left; }
 }
